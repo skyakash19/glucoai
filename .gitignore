@@ -1,0 +1,21 @@
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+.env.local
+*.log
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+
+# Static / Media (optional if user-generated)
+staticfiles/
+media/
+
+# Node (if using npm for frontend)
+node_modules/
