@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f8fb;
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #1976d2;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="float"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f5ba6;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.result-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.result-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.result-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+body {
+    background-image: url('robothand.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background-image: url('robothand.jpeg');
+}
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.auth-page {
+    background-image: url('Ai-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}

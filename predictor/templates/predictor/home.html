@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GlucoAI – Smart Diabetes Risk Predictor</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <style>
+    body {
+      margin: 0;
+      background: url("{% static 'robothand.jpeg' %}") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .hero {
+      padding: 120px 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero p {
+      font-size: 1.2em;
+      animation: fadeIn 3s ease-in;
+    }
+    .hero a {
+      margin: 15px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background-color: #00c9a7;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>🧠 GlucoAI</h1>
+    <p>Predict diabetes risks smartly & learn how to stay healthy</p>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'signup' %}">Signup</a>
+  </div>
+</body>
+</html>
+<!-- This is the homepage for GlucoAI, featuring a hero section with a background image, title, description, and links to login and signup pages. -->
+<!-- It serves as the entry point for users to access the diabetes risk prediction tool and learn more

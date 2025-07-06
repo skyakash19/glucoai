@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup – GlucoAI</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body class="auth-page">
+    <div class="auth-form">
+        <h2>Signup to GlucoAI</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GlucoAI – Processing</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+        }
+        .loader {
+            margin-top: 80px;
+        }
+        .loader img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .loader h3 {
+            margin-top: 20px;
+            color: #444;
+        }
+    </style>
+    <script>
+        setTimeout(function(){
+            window.location.href = "{% url 'dashboard' %}";
+        }, 2000);
+    </script>
+</head>
+<body>
+    <div class="loader">
+        <img src="{% static 'robot-working.jpg' %}" alt="Working...">
+        <h3>We ML models are working on it to make you safe 🤖</h3>
+    </div>
+</body>
+</html>
+<!-- This template displays a loading screen while the machine learning models process the user's input. -->
+<!-- It includes a message indicating that the models are working and automatically redirects to the dashboard after

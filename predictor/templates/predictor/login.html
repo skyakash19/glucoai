@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login – GlucoAI</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        body.auth-page {
+            background: url("{% static 'Ai-1.jpg' %}") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .auth-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .auth-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .auth-form button {
+            background-color: #00c9a7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .auth-form a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .auth-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="auth-page">
+    <div class="auth-form">
+        <h2>Login to <span style="color:#00c9a7;">GlucoAI</span></h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <p>Don’t have an account? <a href="{% url 'signup' %}">Register here</a></p>
+    </div>
+</body>
+</html>

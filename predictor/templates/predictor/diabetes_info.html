@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn About Diabetes</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <div class="content-box">
+    <h2>What is Diabetes?</h2>
+    <p>Diabetes is a chronic condition where the body is unable to properly regulate blood sugar (glucose) levels. It occurs when:</p>
+    <ul>
+      <li>Insulin production is insufficient (Type 1)</li>
+      <li>The body doesn’t respond to insulin (Type 2)</li>
+    </ul>
+
+    <h3>Common Symptoms</h3>
+    <ul>
+      <li>Increased thirst and urination</li>
+      <li>Fatigue</li>
+      <li>Blurred vision</li>
+      <li>Slow wound healing</li>
+    </ul>
+
+    <h3>Healthy Habits to Prevent Diabetes</h3>
+    <ul>
+      <li>Maintain a healthy weight</li>
+      <li>Exercise regularly</li>
+      <li>Eat fiber-rich, low-sugar foods</li>
+      <li>Get regular health checkups</li>
+    </ul>
+
+    <a href="{% url 'dashboard' %}">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
+<!-- This template provides information about diabetes, its symptoms, and healthy habits to prevent it. -->
+<!-- It includes a link to return to the dashboard. -->
